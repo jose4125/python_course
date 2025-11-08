@@ -1,0 +1,130 @@
+# ========================
+# Python general
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+
+# Distribución / empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Logs y archivos temporales
+*.log
+*.pot
+*.pyc
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Archivos de base de datos o runtime
+db.sqlite3
+instance/
+*.db
+*.sqlite3
+*.sqlite
+*.pid
+
+# ========================
+# Entornos virtuales y herramientas
+# ========================
+# uv (nuevo gestor de entornos)
+.uv/
+.venv/
+venv/
+env/
+ENV/
+.envrc
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+poetry.toml
+
+# virtualenv
+bin/
+include/
+Lib/
+Scripts/
+
+# ========================
+# Configuración del entorno
+# ========================
+# Variables de entorno
+.env
+.env.*
+!env.example
+
+# Configuración local
+*.local
+*.secret
+*.key
+
+# ========================
+# PyCharm / JetBrains IDE
+# ========================
+.idea/
+*.iml
+.idea_modules/
+out/
+
+# ========================
+# Archivos del sistema y editor
+# ========================
+.vscode/
+*.code-workspace
+.sublime-project
+.sublime-workspace
+
+# ========================
+# Tests / coverage
+# ========================
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# ========================
+# Otros
+# ========================
+# Documentación generada
+docs/_build/
+site/
+
+# Archivos temporales o experimentales
+tmp/
+sandbox/
+scratch/

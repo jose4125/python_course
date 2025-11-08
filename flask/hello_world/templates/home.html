@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <p>Tu nombre es: {{username}}</p>
+    <a href="{{url_for('home')}}">go to home page</a>
+    <br/>
+    <a href="{{url_for('age', age = 23)}}">go to age page</a>
+    <br/>
+    <a href="{{url_for('logout')}}">logout</a>
+</body>
+</html>
