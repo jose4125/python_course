@@ -17,6 +17,8 @@ employee2 = ('Karl', 'Smith', 23, 60000.500)
 message_format2 = 'Employee: %s %s, Age: %d, Salary: %.2f'
 print(message_format2%employee2)
 
+message_format3 = 'Employee: %(name)s %(lastname)s, Age: %(age)d, Salary: %(salary).2f' % {'name': 'Eva', 'lastname': 'Smith', 'age': 29, 'salary': 72000.756}
+print(message_format3)
 
 
 # Using format() method

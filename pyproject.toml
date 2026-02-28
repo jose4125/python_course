@@ -2,6 +2,12 @@
     name = "python_course"
     version = "0.1.0"
 dependencies = [
+    "cryptography>=46.0.3",
     "flask>=3.1.2",
+    "pillow>=12.1.1",
     "psycopg2-binary>=2.9.11",
+    "pypdf>=6.7.4",
+    "reportlab>=4.4.10",
+    "requests>=2.32.5",
+    "send2trash>=2.1.0",
 ]

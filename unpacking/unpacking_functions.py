@@ -68,3 +68,24 @@ for index, (number, word) in enumerate(list_of_tuples):
 dict_items = {'a': 1, 'b': 2, 'c': 3}
 for key, value in dict_items.items():
     print(f'Key: {key}, Value: {value}')
+
+
+# Unpacking with function argument
+def divide(dividend: int, divisor: int):
+    if divisor == 0:
+        raise ZeroDivisionError('Divisor cannot be 0')
+    return dividend / divisor
+
+def calculate_sum(*values: int, operator):
+    print('values', values)
+    # pass values as tuple, because "sum" expect an iterable as param
+    return operator(values)
+
+def calculate_div(*values: int, operator):
+    print('values', values)
+    print('unpacking values', *values)
+    # pass values as unpacked tuple, because "divider" expect two params
+    return operator(*values)
+
+print('Sum: ', calculate_sum(1, 2, 3, operator=sum))
+print('Divide: ', calculate_div(5, 2, operator=divide))

@@ -1,4 +1,5 @@
-from handling_exceptions.custom_exception import CustomError
+from handling_exceptions.custom_exception import CustomError, NameTooShortError
+
 
 def divide(numerator, denominator):
     try:
@@ -41,3 +42,11 @@ print('\n=== ArithmeticError ===')
 divide(-1, 5)
 print('\n=== CustomError ===')
 divide('custom_error', 5)
+
+def validate_name(name):
+    if len(name) < 3:
+        raise NameTooShortError(name)
+
+    print('name:', name)
+
+validate_name('Je')
